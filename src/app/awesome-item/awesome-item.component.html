@@ -1,0 +1,6 @@
+<app-list-item>
+  <button (click)="awesomeItem.isFavorite=true">Make Favorite</button>
+  <h3>{{awesomeItem.name}}<span *ngIf="awesomeItem.isFavorite">*</span></h3>
+  <p>{{awesomeItem.description}}</p>
+  <a *ngFor="let link of awesomeItem.links" [href]="link.href">{{link.name}}</a>
+</app-list-item>
